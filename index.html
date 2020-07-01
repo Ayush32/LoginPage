@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animated Login Form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+   
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <img class="wave" src="img/image.png" data-aos="fade-right" data-aos-delay="300">
+    <div class="container">
+        <div class="img">
+            <img src="img/undraw_email_campaign_qa8y.svg" data-aos="fade-right" data-aos-delay="300">
+        </div>
+        <div class="login-content" >
+            <form class="login_form" action="home.html" method="POST" name="form" onsubmit="return validated()">
+                <img src="img/undraw_profile_pic_ic5t.svg" data-aos="fade-right" data-aos-delay="500">
+                <h2 class="title" data-aos="fade-right" data-aos-delay="600">Welcome</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        
+                        <input type="text" id="email" name="email" class="input" placeholder="Email">
+                        
+                        
+                    </div>
+                  
+                    
+                </div>
+                  <div id="email_error">Please fill  your Email or Phone</div>
+                
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        <input type="password" id="password" name="password" class="input" placeholder="Password">
+
+                    </div>
+                </div>
+                
+                <div id="pass_error">Password should be minimum of 8 characters</div>
+                 <label for="rememberMe" id="rem">
+                     <input type="checkbox" value="remember" id="remember">&nbsp;&nbsp;Remember me</label>
+                <a href="#">Forgot Password?</a>
+               
+                <input type="submit" class="btn" value="Login" onclick="lsRememberMe()">
+                <input type="submit" class="btn" value="Create Account">
+                
+            </form>
+        </div>
+    </div>
+    <<script type="text/javascript" src="js/validation.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+   
+   
+
+</body>
+
+<script>
+    AOS.init();
+</script>
+
+</html>
